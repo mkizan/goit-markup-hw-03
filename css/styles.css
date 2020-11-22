@@ -1,0 +1,259 @@
+:root {
+    --primary-text-color: #212121;
+    --hero-text-color: #FFFFFF;
+    --secondary-text-color: #757575;
+    --accent-text-color: #2196F3;
+    --background-color: #2F303A;
+    --background-category-color: #F5F4FA;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+
+    background-color: var();
+}
+
+/* STUDIO PAGE */
+
+/* section HEADER */
+.logo {
+    cursor: pointer;
+}
+
+.header ul {
+    list-style: none;
+}
+
+.header-link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--primary-text-color);
+}
+
+.header-link:focus, .header-link:hover {
+    color: var(--accent-text-color);
+    cursor: pointer;
+}
+
+.contact-link {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.14;
+
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--secondary-text-color);
+}
+
+.contact-link:focus, .contact-link:hover {
+    color: var(--accent-text-color);
+    cursor: pointer;
+}
+
+/* section HERO */
+.hero {
+    background-color: var(--background-color);
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    /* or 136% */
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--hero-text-color);
+}
+
+.hero-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    /* identical to box height, or 187% */
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+
+    background-color: var(--accent-text-color);
+    color: var(--hero-text-color);
+}
+
+.hero-button::first-letter {
+    text-transform: capitalize;
+}
+
+/* section QUALITY */
+.quality-lists {
+    list-style: none;
+}
+
+.quality-name {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--primary-text-color);
+}
+
+.quality-description {
+    font-weight: 400;
+    line-height: 1.71;
+
+    letter-spacing: 0.03em;
+
+    color: var(--secondary-text-color);
+}
+
+.quality-description::first-letter {
+    text-transform: capitalize;
+}
+
+/* section OCCUPATION */
+
+.occupation-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-text-color);
+}
+
+.occupation-title::first-letter {
+    text-transform: capitalize;
+}
+
+.occupation-lists {
+    list-style: none;
+}
+
+/* section TEAM */
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-text-color);
+}
+
+.team-title::first-letter {
+    text-transform: capitalize;
+}
+
+.team-lists {
+    list-style: none;
+}
+
+.team-member {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.9;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+
+    color: var(--primary-text-color);
+}
+
+.team-position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+
+    color: var(--secondary-text-color);
+}
+
+/* section FOOTER */
+.footer {
+    background-color: var(--background-color);
+}
+
+.address {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    /* or 171% */
+
+    letter-spacing: 0.03em;
+    color: var(--hero-text-color);
+}
+
+
+/* PORTFOLIO PAGE */
+
+/* section PORTFOLIO */
+.category-lists {
+    list-style: none;
+}
+
+.category-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    /* identical to box height, or 162% */
+
+    text-transform: capitalize;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+
+    background-color: var(--background-category-color);
+    color: var(--primary-text-color);
+}
+
+.category-link:focus, .category-link:hover {
+    background-color: var(--accent-text-color);
+    color: var(--hero-text-color);
+}
+
+
+.portfolio-lists {
+    list-style: none;
+}
+
+.portfolio-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+
+    letter-spacing: 0.06em;
+
+    color: var(--primary-text-color);
+}
+
+.portfolio-work {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+
+    letter-spacing: 0.03em;
+
+    color: var(--secondary-text-color);
+}
