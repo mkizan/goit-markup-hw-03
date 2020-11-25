@@ -22,6 +22,10 @@ body {
     padding-bottom: 25px;
 } */
 
+p {
+    margin: 0;
+}
+
 .container {
     width: 1170px;
     margin: 0 auto;
@@ -107,6 +111,7 @@ body {
 
 /* section HERO */
 .hero {
+    width: 100%;
     padding-top: 200px;
     padding-bottom: 200px;
 
@@ -165,19 +170,23 @@ body {
 }
 .quality-list {
     display: flex;
-
+    margin-top: 0;
+    margin-bottom: 0;
     list-style: none;
 }
 
-.quality-list .item {
+/* .quality-list .item {
     width: calc((1200px - (15px * 2) - (30px * 3)) / 4);
-}
+} */
 
 .quality-list .item:not(:first-child) {
     margin-left: 30px;
 }
 
 .quality-name {
+    margin-top: 0;
+    margin-bottom: 10px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -189,6 +198,9 @@ body {
 }
 
 .quality-description {
+    margin-top: 0;
+    margin-bottom: 0;
+
     font-weight: 400;
     line-height: 1.71;
 
@@ -202,13 +214,20 @@ body {
 }
 
 /* section OCCUPATION */
+.occupation {
+    padding-bottom: 94px;
+
+    text-align: center;
+}
 
 .occupation-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
 
-    text-align: center;
     letter-spacing: 0.03em;
 
     color: var(--primary-text-color);
@@ -219,17 +238,36 @@ body {
 }
 
 .occupation-list {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
     list-style: none;
+}
+
+.occupation-list .item:not(:first-child) {
+    margin-left: 30px;
 }
 
 /* section TEAM */
 
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    text-align: center;
+
+    background-color: var(--background-category-color);
+}
+
 .team-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
 
-    text-align: center;
     letter-spacing: 0.03em;
 
     color: var(--primary-text-color);
@@ -240,16 +278,38 @@ body {
 }
 
 .team-list {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+
     list-style: none;
 }
 
+.team-list > .item {
+    background-color: var(--hero-text-color);
+    /* box-shadow: 0.2px 2px 3px 0.3px var(--secondary-text-color); */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.team-list .item:not(:first-child) {
+    margin-left: 30px;
+}
+
+.team-photo {
+    display: inline-block;
+    border-radius: 5px;
+}
+
 .team-member {
+    margin-top: 30px;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.9;
+    line-height: 1.87;
     /* identical to box height */
 
-    text-align: center;
     letter-spacing: 0.03em;
     text-transform: capitalize;
 
@@ -257,6 +317,8 @@ body {
 }
 
 .team-position {
+    margin-top: 0;
+    margin-bottom: 30px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
@@ -271,10 +333,21 @@ body {
 
 /* section FOOTER */
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--background-color);
 }
 
+.logo-footer {
+    display: inline-block;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
 .address {
+    margin-top: 0;
+    margin-bottom: 9px;
+
     font-style: normal;
     font-weight: 400;
     line-height: 1.71;
@@ -282,6 +355,43 @@ body {
 
     letter-spacing: 0.03em;
     color: var(--hero-text-color);
+}
+
+.address-email {
+    margin-bottom: 9px;
+}
+
+.contact-email {
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+    color: var(--secondary-text-color);
+}
+
+.contact-email:focus, .contact-email:hover {
+    color: var(--accent-text-color);
+    cursor: pointer;
+}
+
+.contact-phone {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+    color: var(--secondary-text-color);
+}
+
+.contact-phone:focus, .contact-phone:hover {
+    color: var(--accent-text-color);
+    cursor: pointer;
 }
 
 
