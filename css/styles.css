@@ -22,10 +22,6 @@ img {
     height: auto;
 }
 
-p {
-    margin: 0;
-}
-
 /* STUDIO PAGE */
 
 .header {
@@ -504,6 +500,7 @@ p {
 }
 
 .portfolio-work {
+    margin: 0;
     padding-left: 24px;
 
     font-weight: 400;
