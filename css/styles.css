@@ -5,6 +5,7 @@
     --accent-text-color: #2196F3;
     --background-color: #2F303A;
     --background-category-color: #F5F4FA;
+    --background-portfolio-color: #E5E5E5;
 }
 
 body {
@@ -15,15 +16,20 @@ body {
     font-size: 14px;
 }
 
-/* STUDIO PAGE */
-
-/* .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
-} */
+img {
+    display: block;
+    /* max-width: 100%; */
+    height: auto;
+}
 
 p {
     margin: 0;
+}
+
+/* STUDIO PAGE */
+
+.header {
+    border-bottom: 1px solid #E5E5E5;
 }
 
 .container {
@@ -86,6 +92,7 @@ p {
 }
 
 .header-link:focus, .header-link:hover {
+    /* border-bottom: 2px solid var(--accent-text-color); */
     color: var(--accent-text-color);
     cursor: pointer;
 }
@@ -288,7 +295,6 @@ p {
 
 .team-list > .item {
     background-color: var(--hero-text-color);
-    /* box-shadow: 0.2px 2px 3px 0.3px var(--secondary-text-color); */
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 }
@@ -398,14 +404,42 @@ p {
 /* PORTFOLIO PAGE */
 
 /* section PORTFOLIO */
+
+.portfolio {
+    padding-top: 70px;
+    padding-bottom: 114px;
+
+    /* background-color: var(--background-portfolio-color); */
+}
+
+.portfolio-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    visibility: hidden;
+}
+
 .category-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding: 0;
+
     list-style: none;
 }
 
+.category-list .item:not(:first-child) {
+    margin-left: 8px;
+}
+
 .category-link {
+    display: inline-block;
+    padding: 6px 22px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+
+    border-radius: 4px;
     /* identical to box height, or 162% */
 
     text-transform: capitalize;
@@ -425,10 +459,41 @@ p {
 
 
 .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
     list-style: none;
 }
 
+.portfolio-list .card {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.portfolio-list .card:nth-child(3n) {
+    margin-right: 0;
+}
+
+.portfolio-list .card:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.card-wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+
+    border: 2px solid #EEEEEE;
+}
+
 .portfolio-name {
+    margin-top: 0;
+    margin-bottom: 4px;
+    padding-left: 24px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -439,6 +504,8 @@ p {
 }
 
 .portfolio-work {
+    padding-left: 24px;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
