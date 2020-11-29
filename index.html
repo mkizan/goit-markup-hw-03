@@ -5,29 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
 </head>
 
 <body>
     <header class="header">
         <div class="container">
-            <nav class="header-nav">
-                <a href="./index.html" class="logo">
-                    <img src="./images/logo.svg" alt="WebStudio">
-                </a>
-                <ul class="header-pages">
-                    <li class="item"><a href="./index.html" class="header-link">студия</a></li>
-                    <li class="item"><a href="./portfolio.html" class="header-link">портфолио</a></li>
-                    <li class="item"><a href="#" class="header-link">контакты</a></li>
-                </ul>
+            <div class="header-wrapper">
+                <nav class="header-nav">
+                    <a href="./index.html" class="logo">
+                        <span class="logo-web">Web</span><span class="logo-header">Studio</span>
+                    </a>
+                    <ul class="header-pages">
+                        <li class="item"><a href="./index.html" class="header-link active-page">студия</a></li>
+                        <li class="item"><a href="./portfolio.html" class="header-link">портфолио</a></li>
+                        <li class="item"><a href="#" class="header-link">контакты</a></li>
+                    </ul>
+                </nav>
                 <ul class="header-contacts">
                     <li class="item"><a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a></li>
                     <li class="item"><a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
     </header>
 
@@ -39,7 +44,7 @@
 
         <section class="quality">
             <div class="container">
-                <h2 class="quality-title">наши качества</h2>
+                <h2 class="quality-title visually-hidden">наши качества</h2>
                 <ul class="quality-list">
                     <li class="item">
                         <h3 class="quality-name">внимание к деталям</h3>
@@ -78,23 +83,31 @@
                 <ul class="team-list">
                     <li class="item">
                         <img class="team-photo" src="./images/product-designer.jpg" alt="Product Designer" width="270">
-                        <h3 class="team-member">игорь демьяненко</h3>
-                        <p class="team-position">product designer</p>
+                        <div class="team-wrapper">
+                            <h3 class="team-member">игорь демьяненко</h3>
+                            <p class="team-position">product designer</p>
+                        </div>
                     </li>
                     <li class="item">
                         <img class="team-photo" src="./images/frontend-developer.jpg" alt="Frontend Developer" width="270">
-                        <h3 class="team-member">ольга репина</h3>
-                        <p class="team-position">frontend developer</p>
+                        <div class="team-wrapper">
+                            <h3 class="team-member">ольга репина</h3>
+                            <p class="team-position">frontend developer</p>
+                        </div>
                     </li>
                     <li class="item">
                         <img class="team-photo" src="./images/marketing.jpg" alt="Marketing" width="270">
-                        <h3 class="team-member">николай тарасов</h3>
-                        <p class="team-position">marketing</p>
+                        <div class="team-wrapper">
+                            <h3 class="team-member">николай тарасов</h3>
+                            <p class="team-position">marketing</p>
+                        </div>
                     </li>
                     <li class="item">
                         <img class="team-photo" src="./images/ui-designer.jpg" alt="UI Designer" width="270">
-                        <h3 class="team-member">михаил ермаков</h3>
-                        <p class="team-position">UI designer</p>
+                        <div class="team-wrapper">
+                            <h3 class="team-member">михаил ермаков</h3>
+                            <p class="team-position">UI designer</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -103,7 +116,9 @@
 
     <footer class="footer">
         <div class="container">
-            <a href="./index.html" class="logo-footer"><img src="./images/logo-footer.svg" alt="WebStudio"></a>
+            <a href="./index.html" class="logo-footer">
+                <span class="logo-web">Web</span><span class="footer-logo">Studio</span>
+            </a>
             <address class="address-list">
                 <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
                 <p class="address-email"><a href="mailto:info@example.com" class="contact-email">info@example.com</a></p>
